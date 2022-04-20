@@ -11,11 +11,6 @@
   display: grid;
   width: 100%;
   min-height: 100vh;
-  /* grid-template-areas:
-    'header header'
-    'main main'
-    'footer footer';
-  grid-template-columns: 1fr 1fr; */
   grid-template-areas:
     'header'
     'main'
@@ -65,10 +60,6 @@ header {
 .logo__link {
   text-align: center;
 }
-/* .logo__img {
-  width: auto;
-  height: 90px;
-} */
 .logo__img {
   width: 100%;
   height: auto;
@@ -76,9 +67,7 @@ header {
 .menu {
   display: flex;
   justify-content: space-evenly;
-  /* width: 45%; */
   width: 100%;
-  /* font-size: 18px; */
   font-size: 0.7em;
 }
 .menu__item {
@@ -154,8 +143,6 @@ footer {
 }
 /* estilos de previsualizacion de secciones */
 .secciones {
-  /* display: flex;
-  justify-content: space-evenly; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,7 +152,6 @@ footer {
 }
 .seccion {
   display: inline-block;
-  /* width: 30%; */
   width: 80%;
   height: 280px;
   background-repeat: no-repeat;
@@ -217,7 +203,6 @@ footer {
   background-color: rgb(90 146 143 / 74%);
   border-radius: 10px;
   color: #6a5744;
-  /* width: 50%; */
   width: 90%;
 }
 .contacto__header {
@@ -226,7 +211,6 @@ footer {
   background-position: center;
   background-size: cover;
   width: 100%;
-  /* height: 200px; */
   height: 100px;
 }
 
@@ -237,7 +221,6 @@ footer {
 }
 .contacto__subtitulo {
   text-align: center;
-  /* font-size: 2em; */
   font-size: 1.8em;
 }
 .contacto__formulario input,
@@ -324,9 +307,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* padding-top: 8rem;
-  padding-left: 7rem;
-  padding-right: 7rem; */
   padding-top: 5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -347,8 +327,6 @@ footer {
 }
 .sobremi__foto {
   float: right;
-  /* width: auto;
-  height: 250px; */
   width: 100%;
   height: auto;
 }
@@ -368,15 +346,12 @@ body > .servicios {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* padding: 3rem 1rem 0; */
   padding: 7rem 1rem 0;
   color: #c7cbc3;
-  /* padding-top: 8rem; */
   margin: 0;
 }
 .articulos__titulo {
   font-family: 'courgette';
-  /* font-size: 50px; */
   font-size: 2em;
 }
 .articulo {
@@ -387,10 +362,8 @@ body > .servicios {
   backdrop-filter: blur(24px);
   border-radius: 6px;
   position: relative;
-  /* flex-direction: row-reverse; */
   flex-direction: column-reverse;
   align-items: center;
-  /* margin: 3rem; */
   margin: 2rem;
   font-size: 0.8em;
   width: 100%;
@@ -402,7 +375,6 @@ body > .servicios {
   font-size: 1.2em;
 }
 .articulo__img {
-  /* height: 250px; */
   width: 100%;
   height: auto;
 }
@@ -427,21 +399,17 @@ body > .servicios {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* padding: 4rem 7rem 0; */
   color: #c7cbc3;
-  /* padding-top: 8rem; */
   padding: 9rem 0.5rem 0;
 }
 .recetas__titulos12 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-bottom: 60px; */
   margin-bottom: 3rem;
 }
 .recetas__titulo {
   font-weight: bold;
-  /* font-size: 5em; */
   font-size: 2.8em;
   color: #3e4c39;
   font-family: 'Satisfy', cursive;
@@ -463,20 +431,17 @@ body > .servicios {
 }
 .receta1__titulo {
   font-family: 'Satisfy', cursive;
-  /* font-size: 2em; */
   font-size: 1.7em;
   text-align: center;
 }
 .receta__personas {
   padding-bottom: 2rem;
-  /* font-size: 25px; */
   font-size: 1em;
   font-family: 'Satisfy';
 }
 .ingredientes {
   padding-bottom: 1rem;
   font-weight: bold;
-  /* font-size: 1.1em; */
   font-size: 1em;
 }
 .receta1__ingredientes {
@@ -484,21 +449,16 @@ body > .servicios {
   font-size: 0.8em;
 }
 .inicio__receta {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .recetas__detalle {
-  /* display: flex;
-  flex-direction: row-reverse; */
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 .receta1__img {
-  /* height: 350px;
-  width: auto; */
   height: auto;
   width: 50%;
 }
@@ -539,24 +499,20 @@ body > .servicios {
   display: flex;
   flex-flow: column;
   align-items: center;
-  /* padding: 2rem; */
   padding: 1rem;
   margin-bottom: 6rem;
 }
 .planes__titulo {
   font-weight: bold;
-  /* font-size: 4em; */
   font-size: 1.8em;
   color: #2d4845;
   font-family: 'courgette', cursive;
   margin-bottom: 4rem;
 }
 .planes__tabla {
-  /* display: flex; */
   display: block;
   overflow-x: auto;
   width: 100%;
-  /* width: 80%; */
   background-color: #efbc756b;
   backdrop-filter: blur(24px);
   border-collapse: collapse;
@@ -565,7 +521,6 @@ body > .servicios {
 .planes__tabla td {
   padding: 0rem 1rem;
 }
-/* .planes__tabla td, */
 .planes__tabla th {
   padding: 1rem 2rem;
 }
@@ -574,12 +529,10 @@ tr {
   border-width: initial;
 }
 .planes__header {
-  /* font-size: xx-large; */
   font-size: 1.3em;
   font-weight: bolder;
   color: #2d4845;
 }
-/* .planes__precios__item, */
 .planes__links__item {
   text-align: center;
   font-size: 1.3em;
@@ -760,7 +713,6 @@ tr {
     flex-direction: row;
     align-items: center;
     padding: 5rem 1rem;
-    /* gap: 1rem; */
   }
   .seccion__caption {
     color: #fff;
