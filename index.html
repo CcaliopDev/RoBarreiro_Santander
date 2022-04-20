@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.jpg" />
+    <title>Lic. Romina Barreiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!--comienzo de Nav-->
+    <div class="grid-container">
+      <header>
+        <nav class="navbar">
+          <a class="logo__link" href="index.html">
+            <img
+              class="logo__img"
+              src="img/logo1-test.png"
+              alt="logo del profesional"
+            />
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Inicio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="pages/nosotros.html">Acerca de</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="pages/articulos.html">Nutridatos</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="pages/recetas.html">Recetas</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="pages/contacto.html">
+                Agenda una cita
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!--comienzo de hero-->
+        <section class="hero">
+          <div class="textos__box">
+            <div class="textos">
+              <h1 class="textos__titulo">Bienvenidos</h1>
+              <h2 class="textos__slogan">
+                A un camino deliciosamente saludable.
+              </h2>
+            </div>
+            <div class="socialmedia">
+              <a
+                class="socialmedia__link"
+                target="_blank"
+                href="https://www.facebook.com"
+              >
+                <img
+                  class="socialmedia__logo"
+                  src="img/facebook.png"
+                  alt="logo facebook"
+                />
+              </a>
+              <a
+                class="socialmedia__link"
+                target="_blank"
+                href="https://www.instagram.com"
+              >
+                <img
+                  class="socialmedia__logo"
+                  src="img/instagram.png"
+                  alt="logo instagram"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <!--termino hero y comienzo de previsualizacion secciones-->
+        <div class="separador"></div>
+        <section class="secciones">
+          <article class="seccion seccion__servicios">
+            <a class="seccion__link" href="pages/contacto.html">
+              <div>
+                <p class="seccion__caption">Servicios</p>
+              </div>
+            </a>
+          </article>
+          <article class="seccion seccion__articulos">
+            <a class="seccion__link" href="pages/articulos.html">
+              <div>
+                <p class="seccion__caption">NutriDatos</p>
+              </div>
+            </a>
+          </article>
+          <article class="seccion seccion__recetas">
+            <a class="seccion__link" href="pages/recetas.html">
+              <div>
+                <p class="seccion__caption">Recetas</p>
+              </div>
+            </a>
+          </article>
+        </section>
+        <div class="separador"></div>
+        <!-- comienzo contacto -->
+        <section class="contacto__seccion">
+          <div class="contacto__header"></div>
+          <div class="contacto">
+            <form class="contacto__formulario" action="">
+              <h2 class="contacto__subtitulo">Contacto</h2>
+              <label for="Nombre">Nombre:</label>
+              <input
+                type="text"
+                name="Nombre"
+                id="Nombre"
+                placeholder="Nombre y apellido"
+              />
+
+              <label for="Email">Email:</label>
+              <input type="email" name="Email" id="Email" placeholder="Email" />
+
+              <label for="asunto">Asunto</label>
+              <input
+                type="text"
+                name="asunto"
+                id="asunto"
+                placeholder="Motivo de la consulta"
+              />
+              <label for="Mensaje">Consulta:</label>
+
+              <textarea
+                name="Mensaje"
+                id="Mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Detalle consulta"
+              ></textarea>
+
+              <button class="submit" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="perfil">
+            <div class="licenciada">
+              <img
+                class="licenciada__foto"
+                src="img/foto-profesional.jpg"
+                alt="foto lic. nutricion"
+              />
+
+              <p class="licenciada__nombre">Lic. Romina Barreiro</p>
+            </div>
+            <div class="contacto__mapa">
+              <iframe
+                class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441880.350241457!2d-58.02870867799933!3d-32.600552485557266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575073afb5fde09%3A0x4a5596616016524a!2sUruguay!5e0!3m2!1ses-419!2suy!4v1648439544842!5m2!1ses-419!2suy"
+                style="border: 0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Fin seccion contacto, inicio footer -->
+      <footer>
+        <p>Copyright 2022 Romina Barreiro, todos los derechos reservados.</p>
+        <p class="footer-derecha">Montevideo, Uruguay</p>
+      </footer>
+    </div>
+  </body>
+</html>

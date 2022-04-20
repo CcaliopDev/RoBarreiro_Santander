@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logo.jpg" />
+    <title>Lic. Romina Barreiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!--comienzo de Nav-->
+      <header>
+        <nav class="navbar">
+          <a class="logo__link" href="../index.html">
+            <img
+              class="logo__img"
+              src="../img/logo1-test.png"
+              alt="logo del profesional"
+            />
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="../index.html">Inicio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="nosotros.html">Acerca de</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="articulos.html">Nutridatos</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="recetas.html">Recetas</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacto.html">Agenda una cita</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- termino de nav e inicio de main -->
+      <main class="planes-contacto">
+        <section class="planes">
+          <h1 class="planes__titulo">Planes y precios</h1>
+          <table class="planes__tabla">
+            <tr class="planes__headers">
+              <th class="planes__header">Basico</th>
+              <th class="planes__header">Medio</th>
+              <th class="planes__header">Premium</th>
+            </tr>
+            <tr class="planes__descripcion">
+              <td>
+                <ul class="planes__lista">
+                  <li class="planes__lista__item">Una consulta</li>
+                  <li class="planes__lista__item">
+                    Educacion nutricional y recomendaciones
+                  </li>
+                  <li class="planes__lista__item">
+                    Elaboracion de menu adaptado a los requerimientos
+                    nutricionales para una semana
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li class="planes__lista__item">
+                    Seguimiento semanal personalizado por 1 mes.
+                  </li>
+                  <li class="planes__lista__item">
+                    Elaboracion de plan nutricional con guia de preparacion y
+                    menu por un mes
+                  </li>
+                  <li class="planes__lista__item">Educacion nutricional.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li class="planes__lista__item">
+                    Seguimiento semanal personalizado por 3 meses.
+                  </li>
+                  <li class="planes__lista__item">
+                    Entrevista inicial de 30-45 minutos.
+                  </li>
+                  <li class="planes__lista__item">
+                    Elaboracion del plan nutricional con guia personalizada,
+                    menu mensual adaptado por 3 meses.
+                  </li>
+                  <li class="planes__lista__item">Educacion nutricional.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="planes__precios">
+              <td class="planes__precios__item">$ 500</td>
+              <td class="planes__precios__item">$ 1000</td>
+              <td class="planes__precios__item">$ 1800</td>
+            </tr>
+            <tr class="planes__links">
+              <td class="planes__links__item">
+                <a class="planes__link" href="https://www.whatsapp.com">
+                  Me interesa
+                </a>
+              </td>
+              <td class="planes__links__item">
+                <a class="planes__link" href="https://www.whatsapp.com">
+                  Me interesa
+                </a>
+              </td>
+              <td class="planes__links__item">
+                <a class="planes__link" href="https://www.whatsapp.com">
+                  Me interesa
+                </a>
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- comienzo contacto -->
+        <section class="contacto">
+          <form class="contacto__formulario" action="">
+            <h2 class="contacto__subtitulo">Contacto</h2>
+            <label for="Nombre">Nombre:</label>
+            <input
+              type="text"
+              name="Nombre"
+              id="Nombre"
+              placeholder="Nombre y apellido"
+            />
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" placeholder="Email" />
+
+            <label for="asunto">Asunto</label>
+            <input
+              type="text"
+              name="asunto"
+              id="asunto"
+              placeholder="Motivo de la consulta"
+            />
+            <label for="Mensaje">Consulta:</label>
+
+            <textarea
+              name="Mensaje"
+              id="Mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Detalle consulta"
+            ></textarea>
+
+            <button class="submit" type="submit">Enviar</button>
+          </form>
+        </section>
+      </main>
+      <!-- comienzo footer -->
+      <footer>
+        <p>Copyright 2022 Romina Barreiro, todos los derechos reservados.</p>
+        <p class="footer-derecha">Montevideo, Uruguay</p>
+      </footer>
+    </div>
+  </body>
+</html>
