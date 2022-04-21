@@ -719,6 +719,7 @@ tr {
   }
   .seccion__caption {
     color: #fff;
+    font-size: 1em;
   }
   .seccion {
     width: 30%;
