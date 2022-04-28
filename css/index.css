@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Arima Madurai', cursive !important;
 }
 /* Helpers */
 .grid-container {
@@ -21,7 +22,7 @@
 
 /* Globales */
 html {
-  font-family: 'Arima Madurai', cursive;
+  font-family: inherit;
 }
 
 body {
@@ -95,11 +96,6 @@ footer {
   grid-area: footer;
   font-size: 0.8rem;
 }
-.separador {
-  width: 100%;
-  height: 50px;
-  background-color: rgb(90 146 143);
-}
 
 /* index */
 /* estilos de hero */
@@ -121,8 +117,9 @@ footer {
   width: 80%;
   height: 80%;
   padding: 2rem;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+
   align-items: center;
 }
 .textos {
@@ -138,7 +135,7 @@ footer {
 }
 .socialmedia {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -149,32 +146,27 @@ footer {
 .secciones {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background-color: rgb(161 184 184 / 79%);
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: rgb(218 196 222 / 53%);
   padding: 5rem 0;
 }
 .seccion {
-  display: inline-block;
-  width: 80%;
-  height: 280px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  align-items: flex-start;
+
+  border-radius: 3px;
 }
-.seccion__caption {
-  color: #fff;
+.secciones__img {
+  height: auto;
+  width: 100%;
 }
-.seccion__servicios {
-  background-image: url(../img/estetoscopio-cortado.jpg);
-}
-.seccion__recetas {
-  background-image: url(../img/recetas.jpg);
-}
-.seccion__articulos {
-  background-image: url(../img/Nutridatos.jpg);
-}
+
 .seccion__link {
   height: 100%;
   width: 100%;
@@ -591,12 +583,14 @@ tr {
   .articulo {
     margin: 3rem;
   }
+
   .textos__titulo {
     font-size: 96px;
   }
   .textos__slogan {
     font-size: 1.5em;
   }
+
   .seccion {
     width: 40%;
   }
@@ -672,6 +666,14 @@ tr {
   .footer {
     font-size: 1rem;
   }
+  .socialmedia {
+    flex-direction: column;
+  }
+  .textos__box {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4rem;
+  }
   .planes__tabla {
     display: flex;
     width: 80%;
@@ -723,7 +725,7 @@ tr {
     font-size: 1em;
   }
   .seccion {
-    width: 30%;
+    width: 20%;
   }
   .perfil {
     display: flex;
