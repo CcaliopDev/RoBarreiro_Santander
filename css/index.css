@@ -52,7 +52,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100px;
+  min-height: 50px;
   padding: 0 1rem;
   justify-content: space-between;
   align-items: center;
@@ -110,7 +110,7 @@ footer {
   flex-direction: column;
   height: 100vh;
   background-image: url(../img/bgtest.jpg);
-  background-attachment: fixed;
+  background-attachment: inherit;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,8 +121,8 @@ footer {
   width: 80%;
   height: 80%;
   padding: 2rem;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
 }
 .textos {
@@ -138,6 +138,7 @@ footer {
 }
 .socialmedia {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
