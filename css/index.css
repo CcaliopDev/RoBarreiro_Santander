@@ -7,7 +7,18 @@
   box-sizing: border-box;
   font-family: 'Arima Madurai', cursive !important;
 }
-
+/* Helpers */
+.grid-container {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 1fr auto;
+}
 /* Globales */
 html {
   font-family: inherit;
@@ -21,10 +32,6 @@ p {
   font-size: 0.8em;
 }
 
-main {
-  grid-area: main;
-}
-
 header {
   background-color: #3048448f;
   font-weight: bolder;
@@ -33,7 +40,6 @@ header {
   position: fixed;
   z-index: 3;
   backdrop-filter: blur(24px);
-  grid-area: header;
 }
 
 /* estilos del navbar */
@@ -78,7 +84,6 @@ footer {
   width: 100%;
   color: #112522;
   height: 90px;
-  grid-area: footer;
   font-size: 0.8rem;
 }
 
@@ -103,7 +108,7 @@ footer {
   height: 80%;
   padding: 2rem;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   align-items: center;
 }
@@ -141,36 +146,7 @@ footer {
   );
   padding: 5rem 2rem;
 }
-.seccion {
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 2rem;
-  align-items: flex-start;
 
-  border-radius: 3px;
-}
-.secciones__img {
-  height: auto;
-  width: 100%;
-}
-
-.seccion__link {
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  color: #2d4845;
-  font-size: xx-large;
-}
-
-.seccion div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
 .card {
   border-radius: 4px;
   background: #ffffffe6;
