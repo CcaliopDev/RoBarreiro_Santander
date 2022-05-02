@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../img/logo.jpg" />
+    <link rel="icon" href="img/logo.jpg" />
     <title>Lic. Romina Barreiro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,156 +12,280 @@
       href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
-    <div class="grid-container">
-      <!--comienzo de Nav-->
-      <header>
-        <nav class="navbar">
-          <a class="logo__link" href="../index.html">
-            <img
-              class="logo__img"
-              src="../img/logo1-test.png"
-              alt="logo del profesional"
-            />
-          </a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="../index.html">Inicio</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="nosotros.html">Acerca de</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="articulos.html">Nutridatos</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="recetas.html">Recetas</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="contacto.html">Agenda una cita</a>
-            </li>
-          </ul>
+    <!--comienzo de Nav-->
+    
+          <header class="col-xs-12">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="#">
+              <img
+                src="../img/logo1-test.png"
+                alt=""
+                width="100%"
+                height="38px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                >
+                  Inicio
+                </a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="articulos.html">NutriDatos</a>
+                <a class="nav-link" href="recetas.html">Recetas</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
       <!-- termino de nav e inicio de main -->
-      <main class="planes-contacto">
+      <main class="col-xs-12 planes-contacto">
         <section class="planes">
           <h1 class="planes__titulo">Planes y precios</h1>
-          <table class="planes__tabla">
-            <tr class="planes__headers">
-              <th class="planes__header">Basico</th>
-              <th class="planes__header">Medio</th>
-              <th class="planes__header">Premium</th>
-            </tr>
-            <tr class="planes__descripcion">
-              <td>
-                <ul class="planes__lista">
-                  <li class="planes__lista__item">Una consulta</li>
-                  <li class="planes__lista__item">
-                    Educacion nutricional y recomendaciones
-                  </li>
-                  <li class="planes__lista__item">
-                    Elaboracion de menu adaptado a los requerimientos
-                    nutricionales para una semana
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                  <li class="planes__lista__item">
-                    Seguimiento semanal personalizado por 1 mes.
-                  </li>
-                  <li class="planes__lista__item">
-                    Elaboracion de plan nutricional con guia de preparacion y
-                    menu por un mes
-                  </li>
-                  <li class="planes__lista__item">Educacion nutricional.</li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                  <li class="planes__lista__item">
-                    Seguimiento semanal personalizado por 3 meses.
-                  </li>
-                  <li class="planes__lista__item">
-                    Entrevista inicial de 30-45 minutos.
-                  </li>
-                  <li class="planes__lista__item">
-                    Elaboracion del plan nutricional con guia personalizada,
-                    menu mensual adaptado por 3 meses.
-                  </li>
-                  <li class="planes__lista__item">Educacion nutricional.</li>
-                </ul>
-              </td>
-            </tr>
-            <tr class="planes__precios">
-              <td class="planes__precios__item">$ 500</td>
-              <td class="planes__precios__item">$ 1000</td>
-              <td class="planes__precios__item">$ 1800</td>
-            </tr>
-            <tr class="planes__links">
-              <td class="planes__links__item">
-                <a class="planes__link" href="https://www.whatsapp.com">
-                  Me interesa
-                </a>
-              </td>
-              <td class="planes__links__item">
-                <a class="planes__link" href="https://www.whatsapp.com">
-                  Me interesa
-                </a>
-              </td>
-              <td class="planes__links__item">
-                <a class="planes__link" href="https://www.whatsapp.com">
-                  Me interesa
-                </a>
-              </td>
-            </tr>
-          </table>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Basico</h5>
+                <p class="card-text">
+                  <ul class="planes__lista">
+                    <li class="planes__lista__item">Una consulta</li>
+                    <li class="planes__lista__item">
+                      Educacion nutricional y recomendaciones
+                    </li>
+                    <li class="planes__lista__item">
+                      Elaboracion de menu adaptado a los requerimientos
+                      nutricionales para una semana
+                    </li>
+                  </ul>
+                </p>
+                <p class="card-text"></p>
+                <a href="#contacto" class="btn btn-primary">Me interesa</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Medio</h5>
+                <p class="card-text">
+                  <ul>
+                    <li class="planes__lista__item">
+                      Seguimiento semanal personalizado por 1 mes.
+                    </li>
+                    <li class="planes__lista__item">
+                      Elaboracion de plan nutricional con guia de preparacion y
+                      menu por un mes
+                    </li>
+                    <li class="planes__lista__item">Educacion nutricional.</li>
+                  </ul>
+                </p>
+                <p class="card-text"></p>
+                <a href="#contacto" class="btn btn-primary">Me interesa</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Premium</h5>
+                <p class="card-text">
+                  <ul>
+                    <li class="planes__lista__item">
+                      Seguimiento semanal personalizado por 3 meses.
+                    </li>
+                    <li class="planes__lista__item">
+                      Entrevista inicial de 30-45 minutos.
+                    </li>
+                    <li class="planes__lista__item">
+                      Elaboracion del plan nutricional con guia personalizada,
+                      menu mensual adaptado por 3 meses.
+                    </li>
+                    <li class="planes__lista__item">Educacion nutricional.</li>
+                  </ul>
+                </p>
+                <p class="card-text"></p>
+                <a href="#contacto" class="btn btn-primary">Me interesa</a>
+              </div>
+            </div>
+          </div>
+
         </section>
 
         <!-- comienzo contacto -->
         <section class="contacto">
-          <form class="contacto__formulario" action="">
-            <h2 class="contacto__subtitulo">Contacto</h2>
-            <label for="Nombre">Nombre:</label>
-            <input
-              type="text"
-              name="Nombre"
-              id="Nombre"
-              placeholder="Nombre y apellido"
-            />
+          <div class="contacto__header"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="well well-sm">
+                  <form class="form-horizontal" method="post">
+                    <fieldset>
+                      <legend id="contacto" class="text-center header">Contactanos</legend>
+                      <div
+                        class="form-group;"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <span class="col-md-1 col-md-offset-2 text-center">
+                          <i class="fa fa-user bigicon"></i>
+                        </span>
+                        <div class="col-md-8">
+                          <input
+                            id="fname"
+                            name="Nombre"
+                            type="text"
+                            placeholder="Nombre"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="form-group;"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <span class="col-md-1 col-md-offset-2 text-center">
+                          <i class="fa fa-user bigicon"></i>
+                        </span>
+                        <div class="col-md-8">
+                          <input
+                            id="lname"
+                            name="Apellido"
+                            type="text"
+                            placeholder="Apellido"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
 
-            <label for="Email">Email:</label>
-            <input type="email" name="Email" id="Email" placeholder="Email" />
+                      <div
+                        class="form-group;"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <span class="col-md-1 col-md-offset-2 text-center">
+                          <i class="fa fa-envelope-o bigicon"></i>
+                        </span>
+                        <div class="col-md-8">
+                          <input
+                            id="email"
+                            name="email"
+                            type="text"
+                            placeholder="Email"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
 
-            <label for="asunto">Asunto</label>
-            <input
-              type="text"
-              name="asunto"
-              id="asunto"
-              placeholder="Motivo de la consulta"
-            />
-            <label for="Mensaje">Consulta:</label>
+                      <div
+                        class="form-group;"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <span class="col-md-1 col-md-offset-2 text-center">
+                          <i class="fa fa-phone-square bigicon"></i>
+                        </span>
+                        <div class="col-md-8">
+                          <input
+                            id="phone"
+                            name="Telefono"
+                            type="text"
+                            placeholder="Telefono"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
 
-            <textarea
-              name="Mensaje"
-              id="Mensaje"
-              cols="30"
-              rows="10"
-              placeholder="Detalle consulta"
-            ></textarea>
+                      <div
+                        class="form-group;"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <span class="col-md-1 col-md-offset-2 text-center">
+                          <i class="fa fa-pencil-square-o bigicon"></i>
+                        </span>
+                        <div class="col-md-8">
+                          <textarea
+                            class="form-control"
+                            id="message"
+                            name="Mensaje"
+                            placeholder="Escribi el motivo de la consulta y te responderemos a la brevedad."
+                            rows="7"
+                          ></textarea>
+                        </div>
+                      </div>
 
-            <button class="submit" type="submit">Enviar</button>
-          </form>
+                      <div
+                        class="form-group;"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                        "
+                      >
+                        <div class="col-md-12 text-center">
+                          <button type="submit" class="btn btn-primary btn-lg">
+                            Enviar
+                          </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <!-- comienzo footer -->
-      <footer>
+      <footer class="col-xs-12">
         <p>Copyright 2022 Romina Barreiro, todos los derechos reservados.</p>
         <p class="footer-derecha">Montevideo, Uruguay</p>
       </footer>
-    </div>
+     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -58,40 +58,37 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.logo__link {
-  text-align: center;
-}
-.logo__img {
-  width: 100%;
-  height: auto;
-}
-.menu {
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  font-size: 0.7em;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: flex-end;
 }
-.menu__item {
-  display: inline-block;
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(216 236 235) !important;
 }
-.menu__link {
-  text-decoration: none;
-  color: rgb(216 236 235);
+.navbar-light .navbar-toggler {
+  border-color: rgb(255 255 255 / 16%);
+  background-color: #a574bfb0;
+  margin: 0.5rem;
 }
-.menu__link:hover {
-  background-color: #88cbb6ed;
-  color: white;
-  border-radius: 8px;
-}
+
 /* estilo de footer */
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(48 73 72);
+  background-color: rgba(97, 130, 129, 0.623);
   padding: 2rem;
   width: 100%;
-  color: #f8fffe;
+  color: #112522;
   height: 90px;
   grid-area: footer;
   font-size: 0.8rem;
@@ -146,10 +143,15 @@ footer {
 .secciones {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
-  background-color: rgb(218 196 222 / 53%);
-  padding: 5rem 0;
+  background: rgb(141, 103, 161);
+  background: linear-gradient(
+    0deg,
+    rgba(141, 103, 161, 0) 0%,
+    rgba(141, 103, 161, 0.45171572046787467) 100%
+  );
+  padding: 5rem 2rem;
 }
 .seccion {
   display: flex;
@@ -174,15 +176,34 @@ footer {
   color: #2d4845;
   font-size: xx-large;
 }
-.seccion__link:hover {
-  background-color: #8e927a;
-  color: white;
-}
+
 .seccion div {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.card {
+  border-radius: 4px;
+  background: #ffffffe6;
+  backdrop-filter: blur(46px);
+  box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  margin: 1rem;
+}
+.card-title {
+  font-size: 2.3rem;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.card-img-top {
+  height: 228px;
+  width: auto;
 }
 /* seccion contacto */
 .contacto__seccion {
@@ -191,110 +212,61 @@ footer {
   gap: 6rem;
   padding-bottom: 2rem;
 }
+
 .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem auto;
-  background-color: rgb(90 146 143 / 74%);
+  background-color: rgb(90 146 143 / 24%);
   border-radius: 10px;
   color: #6a5744;
   width: 90%;
 }
-.contacto__header {
-  background-image: url(../img/Background-medico.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100px;
+
+.header {
+  color: #755095;
+  font-size: 27px;
+  padding: 10px;
 }
 
-.contacto__formulario {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
+.bigicon {
+  font-size: 35px;
+  color: #755095;
 }
-.contacto__subtitulo {
-  text-align: center;
-  font-size: 1.8em;
-}
-.contacto__formulario input,
-.contacto__formulario textarea {
-  width: 100%;
-}
-.contacto__mapa {
-  display: none;
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+  background-color: #8d67a1;
+  border-color: #755095;
+  margin: 1rem;
 }
 
-.submit {
-  border: 3px solid #8e927a;
-  border-radius: 18px;
-  color: white;
-  padding: 6px 24px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 21px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #b1896278;
-}
-.submit:hover {
-  background-color: #88cbb6ed;
-  color: white;
-}
-/* seccion perfil */
-.perfil {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 7rem;
-}
-.licenciada {
-  width: 273px;
-  height: 340px;
-  background-color: #486b6af5;
-  border-radius: 10px;
-  outline: auto;
-  outline-offset: -8px;
-  position: relative;
-  overflow: hidden;
-}
-.licenciada__foto {
-  position: absolute;
-  inset: 0;
+.form-control {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6;
-  transition: all 0.75s;
-}
-.licenciada:hover .licenciada__foto {
-  transform: scale(1.15);
-}
-.licenciada__nombre {
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-  font-size: 20px;
-  text-shadow: 0 0 1px rgba (0, 0, 0, 0.5);
-  color: #fff;
-  font-weight: bold;
-}
-
-.mapa {
-  width: 350px;
-  height: 344.4px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 3px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin: 0.2rem;
 }
 
 /* nosotros */
 /* contenido */
 .sobremi {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   align-items: center;
@@ -308,21 +280,21 @@ footer {
   padding-right: 1rem;
 }
 .sobremi__box {
-  color: #e3e9df;
+  color: #000000;
   padding: 2rem;
-  background-color: #0909097a;
-  backdrop-filter: blur(24px);
+  /* background-color: #0909097a;
+  backdrop-filter: blur(24px); */
   border-radius: 6px;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   position: relative;
 }
 .sobremi__titulo {
-  font-family: 'satisfy', cursive;
-  font-size: xx-large;
+  font-family: 'satisfy', cursive !important;
+  font-size: 64px;
+  font-weight: bold;
 }
 .sobremi__foto {
-  float: right;
   width: 100%;
   height: auto;
 }
@@ -343,37 +315,15 @@ body > .servicios {
   background-size: cover;
   background-position: center;
   padding: 7rem 1rem 0;
-  color: #c7cbc3;
+  color: #2a1039;
   margin: 0;
 }
 .articulos__titulo {
-  font-family: 'courgette';
+  font-family: 'courgette' !important;
   font-size: 2em;
+  font-weight: bold;
 }
-.articulo {
-  display: flex;
-  color: #e3e9df;
-  padding: 2rem;
-  background-color: rgb(158 238 234 / 37%);
-  backdrop-filter: blur(24px);
-  border-radius: 6px;
-  position: relative;
-  flex-direction: column-reverse;
-  align-items: center;
-  margin: 2rem;
-  font-size: 0.8em;
-  width: 100%;
-}
-.articulo__contenido {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2em;
-}
-.articulo__img {
-  width: 100%;
-  height: auto;
-}
+
 .textos__titulo {
   margin-top: 2rem;
   font-size: 3em;
@@ -396,7 +346,7 @@ body > .servicios {
   background-size: cover;
   background-position: center;
   color: #c7cbc3;
-  padding: 9rem 0.5rem 0;
+  padding: 4rem 0.5rem 0;
 }
 .recetas__titulos12 {
   display: flex;
@@ -408,12 +358,12 @@ body > .servicios {
   font-weight: bold;
   font-size: 2.8em;
   color: #3e4c39;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Satisfy', cursive !important;
 }
 .recetas__subtitulo {
   font-style: italic;
   color: #56713e;
-  font-family: 'Courgette', cursive;
+  font-family: 'Courgette', cursive !important;
   font-size: 1em;
   text-align: center;
 }
@@ -424,6 +374,9 @@ body > .servicios {
   border-radius: 6px;
   margin-bottom: 3rem;
   position: relative;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 .receta1__titulo {
   font-family: 'Satisfy', cursive;
@@ -483,7 +436,7 @@ body > .servicios {
 /* Pagina planes y contacto */
 .planes-contacto {
   padding-top: 7rem;
-  background-image: url(../img/bgtest.jpg);
+  background-image: url(../img/bck__contacto.jpg);
   background-attachment: fixed;
   width: 100%;
   background-repeat: no-repeat;
@@ -502,60 +455,8 @@ body > .servicios {
   font-weight: bold;
   font-size: 1.8em;
   color: #2d4845;
-  font-family: 'courgette', cursive;
+  font-family: 'courgette', cursive !important;
   margin-bottom: 4rem;
-}
-.planes__tabla {
-  display: block;
-  overflow-x: auto;
-  width: 100%;
-  background-color: #efbc756b;
-  backdrop-filter: blur(24px);
-  border-collapse: collapse;
-  border-radius: 10px;
-}
-.planes__tabla td {
-  padding: 0rem 1rem;
-}
-.planes__tabla th {
-  padding: 1rem 2rem;
-}
-tr {
-  border-bottom: 1px solid #3e4c39;
-  border-width: initial;
-}
-.planes__header {
-  font-size: 1.3em;
-  font-weight: bolder;
-  color: #2d4845;
-}
-.planes__links__item {
-  text-align: center;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-.planes__lista__item {
-  font-size: 0.8em;
-}
-.planes__precios__item {
-  font-size: 0.9em;
-}
-.planes__links {
-  border-bottom: 0px;
-}
-.planes__link {
-  text-decoration: none;
-  color: #634c0e;
-}
-.planes__link:hover {
-  background-color: rgb(201 255 232);
-  border-radius: 8px;
-}
-.planes-contacto .contacto {
-  margin-bottom: 3rem;
-}
-.planes__links__item {
-  font-size: 1em;
 }
 
 /* Responsive-media queries */
@@ -602,6 +503,7 @@ tr {
     padding-left: 7rem;
     padding-right: 7rem;
   }
+
   .articulos {
     margin: 0;
     padding: 4rem 7rem 0;
@@ -614,11 +516,10 @@ tr {
     font-size: 50px;
   }
   .recetas {
-    padding: 4rem 7rem 0;
-    padding-top: 10rem;
+    padding-top: 6rem;
   }
   .recetas__titulos12 {
-    margin-bottom: 60px;
+    margin-bottom: 1px;
   }
   .recetas__titulo {
     font-size: 5em;
@@ -681,17 +582,31 @@ tr {
   .articulo {
     width: 100%;
   }
+  .sobremi {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .sobremi__box {
     margin-top: 3rem;
+    flex-direction: row !important;
   }
   .sobremi__foto {
-    float: right;
     width: auto;
     height: 250px;
   }
-  .contacto__header {
-    width: 100%;
-    height: 200px;
+  .sobremi__img {
+    height: max-content;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.5em;
+  }
+  .navbar {
+    height: 9vh;
   }
 }
 
@@ -717,8 +632,9 @@ tr {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    align-items: center;
     padding: 5rem 1rem;
+    gap: 7%;
+    align-items: stretch;
   }
   .seccion__caption {
     color: #fff;

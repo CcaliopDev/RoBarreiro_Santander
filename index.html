@@ -23,208 +23,273 @@
   </head>
   <body>
     <!--comienzo de Nav-->
-    <div class="grid-container">
-      <header>
-        <nav class="navbar">
-          <a class="logo__link" href="index.html">
-            <img
-              class="logo__img"
-              src="img/logo1-test.png"
-              alt="logo del profesional"
-            />
+
+    <header class="col-xs-12">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+        <div class="container-fluid justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo1-test.png" alt="" width="100%" height="38px" />
           </a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="index.html">Inicio</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="pages/nosotros.html">Acerca de</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="pages/articulos.html">Nutridatos</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="pages/recetas.html">Recetas</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="pages/contacto.html">
-                Agenda una cita
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Inicio
               </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <!--comienzo de hero-->
-        <section class="hero">
-          <div class="textos__box">
-            <div class="textos">
-              <h1 class="textos__titulo slide-top">Bienvenidos</h1>
-              <h2 class="textos__slogan slide-top">
-                A un camino deliciosamente saludable.
-              </h2>
-            </div>
-            <div class="socialmedia">
-              <a
-                class="socialmedia__link"
-                target="_blank"
-                href="https://www.facebook.com"
-              >
-                <img
-                  class="socialmedia__logo"
-                  src="img/facebook.png"
-                  alt="logo facebook"
-                />
-              </a>
-              <a
-                class="socialmedia__link"
-                target="_blank"
-                href="https://www.instagram.com"
-              >
-                <img
-                  class="socialmedia__logo"
-                  src="img/instagram.png"
-                  alt="logo instagram"
-                />
-              </a>
+              <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+              <a class="nav-link" href="pages/articulos.html">NutriDatos</a>
+              <a class="nav-link" href="pages/recetas.html">Recetas</a>
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
             </div>
           </div>
-        </section>
-        <!--termino hero y comienzo de previsualizacion secciones-->
-        <section class="secciones">
-          <article class="seccion seccion__servicios">
-            <div>
+        </div>
+      </nav>
+    </header>
+    <main class="col-xs-12">
+      <!--comienzo de hero-->
+      <section class="hero">
+        <div class="textos__box">
+          <div class="textos">
+            <h1 class="textos__titulo slide-top">Bienvenidos</h1>
+            <h2 class="textos__slogan slide-top">
+              A un camino deliciosamente saludable.
+            </h2>
+          </div>
+          <div class="socialmedia">
+            <a
+              class="socialmedia__link"
+              target="_blank"
+              href="https://www.facebook.com"
+            >
               <img
-                class="secciones__img"
-                src="img/servicios500.png"
-                alt="Servicios"
+                class="socialmedia__logo"
+                src="img/facebook.png"
+                alt="logo facebook"
               />
-            </div>
-            <h2>Servicios</h2>
-            <p>
+            </a>
+            <a
+              class="socialmedia__link"
+              target="_blank"
+              href="https://www.instagram.com"
+            >
+              <img
+                class="socialmedia__logo"
+                src="img/instagram.png"
+                alt="logo instagram"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--termino hero y comienzo de previsualizacion secciones-->
+      <section class="secciones justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="img/servicios500.png"
+            class="card-img-top"
+            alt="servicios"
+          />
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Servicios</h5>
+            <p class="card-text">
               Todos nuestros servicios son respaldados 100% por un profesional
               capacitado y especializado en cada uno de sus inquietudes
             </p>
-          </article>
-          <article class="seccion seccion__articulos">
-            <div>
-              <img
-                class="secciones__img"
-                src="img/nutridatos500.png"
-                alt="Servicios"
-              />
-            </div>
-            <h2>Nutridatos</h2>
-            <p>
-              Datos curiosos, informacion relevante, Datoos cientificos y mucho
+            <a href="pages/contacto.html" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="img/nutridatos500.png"
+            class="card-img-top"
+            alt="NutriDatos"
+          />
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">NutriDatos</h5>
+            <p class="card-text">
+              Datos curiosos, informacion relevante, Datos cientificos y mucho
               mas encontraras...
             </p>
-          </article>
-          <article class="seccion seccion__recetas">
-            <div>
-              <img
-                class="secciones__img"
-                src="img/Recetas500.png"
-                alt="Recetas"
-              />
-            </div>
-            <h2>Recetas</h2>
-            <p>
+            <a href="pages/articulos.html" class="btn btn-primary">
+              Ver mas
+            </a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img/Recetas500.png" class="card-img-top" alt="Recetas" />
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Recetas</h5>
+            <p class="card-text">
               Comer saludable no significa que no puedas comer rico!... Si no
               sabes como, entonces estas en el lugar correcto, tenemos las
               recetas mas ricas y saludables para tu desayuno, almuerzo,
               merienda, cena o algun snack.
             </p>
-          </article>
-          <!-- <article class="seccion seccion__servicios">
-            <a class="seccion__link" href="pages/contacto.html">
-              <div>
-                <p class="seccion__caption">Servicios</p>
-              </div>
-            </a>
-          </article>
-          <article class="seccion seccion__articulos">
-            <a class="seccion__link" href="pages/articulos.html">
-              <div>
-                <p class="seccion__caption">NutriDatos</p>
-              </div>
-            </a>
-          </article>
-          <article class="seccion seccion__recetas">
-            <a class="seccion__link" href="pages/recetas.html">
-              <div>
-                <p class="seccion__caption">Recetas</p>
-              </div>
-            </a>
-          </article> -->
-        </section>
-
-        <!-- comienzo contacto -->
-        <section class="contacto__seccion">
-          <div class="contacto__header"></div>
-          <div class="contacto">
-            <form class="contacto__formulario" action="">
-              <h2 class="contacto__subtitulo">Contacto</h2>
-              <label for="Nombre">Nombre:</label>
-              <input
-                type="text"
-                name="Nombre"
-                id="Nombre"
-                placeholder="Nombre y apellido"
-              />
-
-              <label for="Email">Email:</label>
-              <input type="email" name="Email" id="Email" placeholder="Email" />
-
-              <label for="asunto">Asunto</label>
-              <input
-                type="text"
-                name="asunto"
-                id="asunto"
-                placeholder="Motivo de la consulta"
-              />
-              <label for="Mensaje">Consulta:</label>
-
-              <textarea
-                name="Mensaje"
-                id="Mensaje"
-                cols="30"
-                rows="10"
-                placeholder="Detalle consulta"
-              ></textarea>
-
-              <button class="submit" type="submit">Enviar</button>
-            </form>
+            <a href="pages/recetas.html" class="btn btn-primary">Ver mas</a>
           </div>
-          <div class="perfil">
-            <div class="licenciada">
-              <img
-                class="licenciada__foto"
-                src="img/foto-profesional.jpg"
-                alt="foto lic. nutricion"
-              />
+        </div>
+      </section>
 
-              <p class="licenciada__nombre">Lic. Romina Barreiro</p>
-            </div>
-            <div class="contacto__mapa">
-              <iframe
-                class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441880.350241457!2d-58.02870867799933!3d-32.600552485557266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575073afb5fde09%3A0x4a5596616016524a!2sUruguay!5e0!3m2!1ses-419!2suy!4v1648439544842!5m2!1ses-419!2suy"
-                style="border: 0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+      <!-- comienzo contacto -->
+      <section class="contacto">
+        <div class="contacto__header"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                  <fieldset>
+                    <legend class="text-center header">Contactanos</legend>
+                    <div
+                      class="form-group;"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                      "
+                    >
+                      <span class="col-md-1 col-md-offset-2 text-center">
+                        <i class="fa fa-user bigicon"></i>
+                      </span>
+                      <div class="col-md-8">
+                        <input
+                          id="fname"
+                          name="Nombre"
+                          type="text"
+                          placeholder="Nombre"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="form-group;"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                      "
+                    >
+                      <span class="col-md-1 col-md-offset-2 text-center">
+                        <i class="fa fa-user bigicon"></i>
+                      </span>
+                      <div class="col-md-8">
+                        <input
+                          id="lname"
+                          name="Apellido"
+                          type="text"
+                          placeholder="Apellido"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="form-group;"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                      "
+                    >
+                      <span class="col-md-1 col-md-offset-2 text-center">
+                        <i class="fa fa-envelope-o bigicon"></i>
+                      </span>
+                      <div class="col-md-8">
+                        <input
+                          id="email"
+                          name="email"
+                          type="text"
+                          placeholder="Email"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="form-group;"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                      "
+                    >
+                      <span class="col-md-1 col-md-offset-2 text-center">
+                        <i class="fa fa-phone-square bigicon"></i>
+                      </span>
+                      <div class="col-md-8">
+                        <input
+                          id="phone"
+                          name="Telefono"
+                          type="text"
+                          placeholder="Telefono"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="form-group;"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                      "
+                    >
+                      <span class="col-md-1 col-md-offset-2 text-center">
+                        <i class="fa fa-pencil-square-o bigicon"></i>
+                      </span>
+                      <div class="col-md-8">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          name="Mensaje"
+                          placeholder="Escribi el motivo de la consulta y te responderemos a la brevedad."
+                          rows="7"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div
+                      class="form-group;"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                      "
+                    >
+                      <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                          Enviar
+                        </button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </div>
-        </section>
-      </main>
-      <!-- Fin seccion contacto, inicio footer -->
-      <footer>
-        <p>Copyright 2022 Romina Barreiro, todos los derechos reservados.</p>
-        <p class="footer-derecha">Montevideo, Uruguay</p>
-      </footer>
-    </div>
+        </div>
+      </section>
+    </main>
+    <!-- Fin seccion contacto, inicio footer -->
+    <footer class="col-xs-12">
+      <p>Copyright 2022 Romina Barreiro, todos los derechos reservados.</p>
+      <p class="footer-derecha">Montevideo, Uruguay</p>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
