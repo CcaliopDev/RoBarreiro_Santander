@@ -1,0 +1,247 @@
+// font
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap');
+
+// Import misc
+
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+
+// Import partials
+
+@import './partials/header';
+@import './partials/footer';
+
+// Import views
+
+@import './views/home';
+@import './views/recetas';
+@import './views/articulos';
+@import './views/nosotros';
+@import './views/contacto';
+
+@media screen and (min-width: 590px) {
+  .navbar-brand img {
+    height: 70px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  footer {
+    flex-direction: row;
+  }
+  .menu {
+    font-size: 18px;
+  }
+  .contacto {
+    width: 50%;
+  }
+  .contacto__subtitulo {
+    font-size: 2em;
+  }
+  .articulos {
+    margin: 0;
+    padding: 4rem 7rem 0;
+  }
+  .articulo {
+    margin: 3rem;
+  }
+
+  .textos__titulo {
+    font-size: 96px;
+  }
+  .textos__slogan {
+    font-size: 1.5em;
+  }
+
+  .seccion {
+    width: 40%;
+  }
+  .contacto__mapa {
+    display: inline-block;
+  }
+  .sobremi {
+    padding-top: 8rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .articulos {
+    margin: 0;
+    padding: 4rem 7rem 0;
+    padding-top: 10rem;
+  }
+  .articulo {
+    font-size: 1em;
+  }
+  .articulos__titulo {
+    font-size: 50px;
+  }
+  .recetas {
+    padding-top: 6rem;
+  }
+  .recetas__titulos12 {
+    margin-bottom: 1px;
+  }
+  .recetas__titulo {
+    font-size: 5em;
+  }
+  .recetas__subtitulo {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .receta1__titulo {
+    font-size: 2em;
+    text-align: center;
+  }
+  .receta__personas {
+    font-size: 25px;
+  }
+  .ingredientes {
+    font-size: 1.1em;
+  }
+  .receta1__ingredientes {
+    font-size: 1em;
+  }
+  .planes {
+    padding: 2rem;
+    margin-bottom: 6rem;
+  }
+  .planes__tabla td {
+    padding: 1rem 2rem;
+  }
+  .planes__titulo {
+    font-size: 4em;
+  }
+  .planes__header {
+    font-size: xx-large;
+  }
+  .planes__lista__item {
+    font-size: 1em;
+  }
+  .planes__precios__item,
+  .planes__links__item {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .footer {
+    font-size: 1rem;
+  }
+  .socialmedia {
+    flex-direction: column;
+  }
+  .textos__box {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4rem;
+  }
+  .planes__tabla {
+    display: flex;
+    width: 80%;
+  }
+  .articulo {
+    width: 100%;
+  }
+  .sobremi {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .sobremi__box {
+    margin-top: 3rem;
+    flex-direction: row !important;
+  }
+  .sobremi__foto {
+    width: auto;
+    height: 250px;
+  }
+  .sobremi__img {
+    height: max-content;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.5em;
+  }
+  .navbar {
+    height: 9vh;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .logo__img {
+    width: auto;
+    height: 90px;
+  }
+  .menu {
+    width: 45%;
+  }
+  .secciones {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 5rem 1rem;
+    gap: 7%;
+    align-items: stretch;
+  }
+  .seccion__caption {
+    color: #fff;
+    font-size: 1em;
+  }
+  .seccion {
+    width: 20%;
+  }
+  .perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .articulo {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .articulo__img {
+    width: auto;
+    height: 250px;
+  }
+  .articulos__titulo {
+    margin-top: 2rem;
+  }
+  /* Recetas */
+  .inicio__receta {
+    position: relative;
+  }
+  .recetas__detalle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .receta1__img {
+    height: 300px;
+    width: auto;
+  }
+  .receta1__fotopreparacion img {
+    height: auto;
+    width: 40%;
+    text-align: center;
+  }
+}
+/* Animaciones */
+@keyframes slide-top {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

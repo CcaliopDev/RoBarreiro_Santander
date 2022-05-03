@@ -1,0 +1,30 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arima Madurai', cursive !important;
+}
+
+/* Globales */
+html {
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+header {
+  background-color: #3048448f;
+  font-weight: bolder;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 3;
+  backdrop-filter: blur(24px);
+}

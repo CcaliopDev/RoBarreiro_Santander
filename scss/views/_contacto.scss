@@ -1,0 +1,24 @@
+.planes-contacto {
+  padding-top: 7rem;
+  background-image: url(../img/bck__contacto.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 3rem;
+}
+.planes {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 6rem;
+}
+.planes__titulo {
+  font-weight: bold;
+  font-size: 2.3em;
+  color: #2d4845;
+  font-family: 'courgette', cursive !important;
+  margin-bottom: 4rem;
+}
