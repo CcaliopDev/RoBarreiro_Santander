@@ -106,7 +106,6 @@ footer {
   display: flex;
   width: 80%;
   height: 80%;
-  padding: 2rem;
   flex-direction: column;
   justify-content: flex-start;
 
@@ -159,7 +158,7 @@ footer {
   margin: 1rem;
 }
 .card-title {
-  font-size: 2.3rem;
+  font-size: 1.8em;
 }
 .card:hover {
   transform: scale(1.05);
@@ -272,7 +271,7 @@ body > .servicios {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: url(../img/bg__nutridatos.jpg);
+  background-image: url(../img/bg__nutridatos__true.jpg);
   background-attachment: fixed;
   width: 100%;
   background-repeat: no-repeat;
@@ -284,7 +283,7 @@ body > .servicios {
 }
 .articulos__titulo {
   font-family: 'courgette' !important;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -417,7 +416,7 @@ body > .servicios {
 }
 .planes__titulo {
   font-weight: bold;
-  font-size: 1.8em;
+  font-size: 2.3em;
   color: #2d4845;
   font-family: 'courgette', cursive !important;
   margin-bottom: 4rem;
@@ -426,6 +425,9 @@ body > .servicios {
 /* Responsive-media queries */
 
 @media screen and (min-width: 590px) {
+  .navbar-brand img {
+    height: 70px;
+  }
   p {
     font-size: 1rem;
   }
