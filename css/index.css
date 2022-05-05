@@ -577,6 +577,13 @@ body > .servicios {
 }
 
 @media screen and (min-width: 1050px) {
+  .grid-container {
+    grid-template-areas:
+      'header header'
+      'main main'
+      'footer footer';
+    grid-template-columns: 1fr 1fr;
+  }
   .navbar {
     flex-direction: row;
   }
