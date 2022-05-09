@@ -9,3 +9,16 @@ footer {
   height: 90px;
   font-size: 0.8rem;
 }
+
+//Medias Queries
+
+@media screen and (min-width: 590px) {
+  footer {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 880px) {
+  .footer {
+    font-size: 1rem;
+  }
+}
