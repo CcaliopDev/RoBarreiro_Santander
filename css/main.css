@@ -62,7 +62,7 @@ header {
 
 .navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   min-height: 50px;
   padding: 0 1rem;
