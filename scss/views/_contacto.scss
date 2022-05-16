@@ -1,9 +1,8 @@
 .planes {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  @include flexbox(column, flex-start, center);
   padding: 1rem;
   margin-bottom: 6rem;
+
   &-contacto {
     padding-top: 7rem;
     background-image: url(../img/bck__contacto.jpg);
@@ -21,6 +20,10 @@
     font-family: 'courgette', cursive !important;
     margin-bottom: 4rem;
   }
+}
+.premium {
+  @extend .card;
+  box-shadow: 0 6px 10px #b292b9, 0 0 6px #8c7695;
 }
 
 @media screen and (min-width: 590px) {

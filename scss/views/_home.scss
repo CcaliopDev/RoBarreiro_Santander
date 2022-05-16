@@ -1,8 +1,5 @@
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flexbox(column, center, center);
   height: 100vh;
   background-image: url(../img/bgtest.jpg);
   background-attachment: inherit;
@@ -12,19 +9,13 @@
   background-position: center;
 }
 .textos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexbox(column, center, center);
   color: $color-principal;
-  justify-content: center;
 
   &__box {
-    display: flex;
+    @include flexbox(column, center, center);
     width: 98%;
     height: 80%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   &__titulo {
     font-size: 50px;
@@ -36,19 +27,14 @@
   }
 }
 .socialmedia {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  @include flexbox(row, center, center);
 }
 .slide-top {
   animation: slide-top 2s ease-in-out;
 }
 /* estilos de previsualizacion de secciones */
 .secciones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexbox(column, flex-start, center);
   gap: 2rem;
   background: $color-terciario;
   background: linear-gradient(
@@ -62,17 +48,14 @@
 /* seccion contacto */
 
 .contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexbox(column, flex-start, center);
   margin: 1rem auto;
   background-color: rgba(91, 149, 146, 0.24);
   border-radius: 10px;
   color: #6a5744;
   width: 90%;
   &__seccion {
-    display: flex;
-    flex-direction: column;
+    @include flexbox(column, flex-start, center);
     gap: 6rem;
     padding-bottom: 2rem;
   }
@@ -141,12 +124,9 @@
 
 @media screen and (min-width: 1050px) {
   .secciones {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    @include flexbox(row, space-evenly, stretch);
     padding: 5rem 1rem;
     gap: 7%;
-    align-items: stretch;
   }
   .seccion {
     width: 20%;

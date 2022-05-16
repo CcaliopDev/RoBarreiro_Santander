@@ -1,8 +1,5 @@
 .articulos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  @include flexbox(column, center, center);
   background-image: url(../img/bg__nutridatos__true.jpg);
   background-attachment: fixed;
   width: 100%;

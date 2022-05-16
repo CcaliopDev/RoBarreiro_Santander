@@ -1,8 +1,5 @@
 .recetas {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  @include flexbox(column, center, center);
   background-image: url(../img/background-recetas.jpg);
   background-attachment: fixed;
   width: 100%;
@@ -12,9 +9,7 @@
   color: $color-principal;
   padding: 4rem 0.5rem 0;
   &__titulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, flex-start, center);
     margin-bottom: 3rem;
   }
   &__titulo {
@@ -46,9 +41,7 @@
   position: relative;
   margin-top: 4rem;
   &__inicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox(column, flex-start, center);
   }
   &__titulo {
     font-family: 'Satisfy', cursive;
@@ -69,9 +62,8 @@
     width: 50%;
   }
   &__preparacion {
-    display: flex;
+    @include flexbox(column, flex-start, center);
     padding-bottom: 2rem;
-    flex-direction: column;
     gap: 1rem;
   }
   &__fotopreparacion {
@@ -155,9 +147,6 @@
     }
   }
   .recetas__detalle {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox(row-reverse, space-between, center);
   }
 }

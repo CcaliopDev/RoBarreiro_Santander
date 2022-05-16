@@ -7,13 +7,10 @@
 //Navbar
 
 .navbar {
-  display: flex;
-  flex-direction: row;
+  @include flexbox(row, space-between, center);
   width: 100%;
   min-height: 50px;
   padding: 0 1rem;
-  justify-content: space-between;
-  align-items: center;
   & > .container,
   & > .container-fluid,
   & > .container-lg,
@@ -21,10 +18,8 @@
   & > .container-sm,
   & > .container-xl,
   & > .container-xxl {
-    display: flex;
+    @include flexbox(row, flex-end, center);
     flex-wrap: inherit;
-    align-items: center;
-    justify-content: flex-end;
   }
   &-light {
     & .navbar-nav .nav-link {
@@ -42,7 +37,7 @@
 
 @media screen and (min-width: 590px) {
   .navbar-brand img {
-    height: 70px;
+    height: 60px;
   }
 }
 

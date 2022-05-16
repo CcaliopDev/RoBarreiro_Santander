@@ -1,9 +1,6 @@
 .sobremi {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flexbox(column, center, center);
   position: relative;
-  align-items: center;
   min-height: 100vh;
   background-image: url(../img/bg__nutridatos.jpg);
   background-repeat: no-repeat;

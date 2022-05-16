@@ -1,7 +1,5 @@
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flexbox(column, space-between, flex-start);
   background-color: rgba(97, 130, 129, 0.623);
   padding: 2rem;
   width: 100%;
