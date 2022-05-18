@@ -81,6 +81,7 @@ header {
 }
 
 //Media Queries Globales
+
 @media screen and (min-width: 590px) {
   h1 {
     font-size: map-get($font-s, h1-tablet);

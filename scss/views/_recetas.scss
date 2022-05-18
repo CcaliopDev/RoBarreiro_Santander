@@ -41,7 +41,7 @@
   position: relative;
   margin-top: 4rem;
   &__inicio {
-    @include flexbox(column, flex-start, center);
+    text-align: center;
   }
   &__titulo {
     font-family: 'Satisfy', cursive;
@@ -70,6 +70,7 @@
     height: auto;
     width: 100%;
     text-align: center;
+    display: none;
   }
   &__fotopreparacion img {
     height: auto;
@@ -88,6 +89,8 @@
   font-weight: bold;
   font-size: 1.1em;
 }
+
+// Media Queries
 
 @media screen and (min-width: 590px) {
   .recetas {
@@ -115,6 +118,9 @@
     }
     &__ingredientes {
       font-size: 1em;
+    }
+    &__fotopreparacion {
+      display: block;
     }
   }
   .ingredientes {

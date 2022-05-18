@@ -80,6 +80,15 @@ header {
   grid-template-columns: 100vw;
   grid-template-rows: auto 1fr auto; }
 
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
 .header {
   color: #755095;
   font-size: 27px;
@@ -373,7 +382,8 @@ footer {
   .receta__fotopreparacion {
     height: auto;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    display: none; }
   .receta__fotopreparacion img {
     height: auto;
     width: 60%;
@@ -409,6 +419,8 @@ footer {
       font-size: 25px; }
     .receta__ingredientes {
       font-size: 1em; }
+    .receta__fotopreparacion {
+      display: block; }
   .ingredientes {
     font-size: 1.1em; } }
 

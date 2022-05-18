@@ -11,6 +11,18 @@
   grid-template-rows: auto 1fr auto;
 }
 
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
 // Mixin flexbox
 
 @mixin flexbox($direction, $justify-content, $align-items, $flex: flex) {
