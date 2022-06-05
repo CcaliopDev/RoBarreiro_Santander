@@ -19,7 +19,7 @@ $font-s: (
   h1-mobile: 3.5em,
   h2-mobile: 2.8em,
   h3-mobile: 2.4em,
-  p-mobile: 0.8em,
+  p-mobile: 1.1em,
 );
 
 /* Globales */
@@ -43,7 +43,8 @@ h3 {
   font-size: map-get($font-s, h3-mobile);
 }
 
-p {
+p,
+li {
   font-size: map-get($font-s, p-mobile);
   margin-bottom: 0;
 }

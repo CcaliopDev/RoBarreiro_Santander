@@ -38,6 +38,9 @@ body > .servicios {
     padding-top: 8rem;
     padding-left: 7rem;
     padding-right: 7rem;
+    &__contenido {
+      margin: 2rem;
+    }
   }
 }
 

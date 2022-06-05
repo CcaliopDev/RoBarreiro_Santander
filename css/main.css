@@ -22,8 +22,9 @@ h2 {
 h3 {
   font-size: 2.4em; }
 
-p {
-  font-size: 0.8em;
+p,
+li {
+  font-size: 1.1em;
   margin-bottom: 0; }
 
 header {
@@ -77,8 +78,8 @@ header {
   width: 100%;
   min-height: 100vh;
   grid-template-areas: 'header' 'main' 'footer';
-  grid-template-columns: 100vw;
-  grid-template-rows: auto 1fr auto; }
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%; }
 
 header {
   grid-area: header; }
@@ -123,13 +124,14 @@ footer {
 
 @media screen and (min-width: 590px) {
   .navbar-brand img {
-    height: 60px; } }
+    height: 60px;
+    width: auto; } }
 
 @media screen and (min-width: 992px) {
   .navbar {
-    height: 9vh; }
+    height: 10vh; }
     .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 2.5rem;
+      padding-right: 1.5rem;
       padding-left: 0.5rem;
       font-size: 1.5em; } }
 
@@ -146,7 +148,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   background-color: rgba(97, 130, 129, 0.623);
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   color: #112522;
   height: 90px;
@@ -154,7 +156,8 @@ footer {
 
 @media screen and (min-width: 590px) {
   footer {
-    flex-direction: row; } }
+    flex-direction: row;
+    height: 50px; } }
 
 @media screen and (min-width: 880px) {
   .footer {
@@ -354,10 +357,7 @@ footer {
   position: relative;
   margin-top: 4rem; }
   .receta__inicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; }
+    text-align: center; }
   .receta__titulo {
     font-family: 'Satisfy', cursive;
     font-size: 1.7em;
@@ -367,8 +367,7 @@ footer {
     font-size: 1em;
     font-family: 'Satisfy'; }
   .receta__ingredientes {
-    padding: 1rem;
-    font-size: 0.8em; }
+    padding: 1rem; }
   .receta__img {
     height: auto;
     width: 50%; }
@@ -466,6 +465,13 @@ footer {
     font-family: 'courgette' !important;
     font-size: 3em;
     font-weight: bold; }
+  .articulos .card__image {
+    flex: 1 1 120px; }
+    .articulos .card__image img {
+      width: 100%;
+      height: auto; }
+  .articulos .card__content {
+    flex: 1 1 200px; }
 
 @media screen and (min-width: 590px) {
   .articulos {
@@ -525,7 +531,9 @@ body > .servicios {
   .sobremi {
     padding-top: 8rem;
     padding-left: 7rem;
-    padding-right: 7rem; } }
+    padding-right: 7rem; }
+    .sobremi__contenido {
+      margin: 2rem; } }
 
 @media screen and (min-width: 880px) {
   .sobremi {
